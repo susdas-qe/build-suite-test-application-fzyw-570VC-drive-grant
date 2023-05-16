@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-pac-ntsj
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas_quay_org/build-e2e-kqxi-tenant/build-suite-test-application-fzyw/test-component-pac-ntsj@sha256:fdbfd838d315014865a6b62321b24d711ba34a31ac1b40c62e0c24a0788b8e1c
+        name: my-nginx
+        resources: {}
+status: {}
